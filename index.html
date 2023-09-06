@@ -8,6 +8,9 @@
     </head>
     <body>
         <noscript>Necessário ativar javascript para executar esse site</noscript>
+        <div class="game">
+            <h1 onclick="location.reload()">📖Concursando📖</h1>
+        </div>
         <div class="game" id="game">
             <div class="title">
                 <h4 id="title"></h4>
@@ -179,7 +182,7 @@
                         if(clickedElementId == "1"){
                             this.innerHTML += `<h4 style="color: green; padding-left: 8px;">Certa</h4>`;
                             acertos++;
-                            document.getElementById("acertos").textContent = "Acertos: " + acertos + " de " + numQuestao;
+                            document.getElementById("acertos").textContent = "Acertos: " + acertos;
                         }
                         else{
                             this.innerHTML += `<h4 style="color: red; padding-left: 8px;">Errado</h4>`;
@@ -211,7 +214,7 @@
                     newParagraph.innerHTML += questoes[questao].campoQuestao;
                 }
                 document.getElementById("quantidade").textContent = "Questão " + numQuestao + " de " + questoes.length;
-                document.getElementById("acertos").textContent = "Acertos: " + acertos + " de " + numQuestao;
+                document.getElementById("acertos").textContent = "Acertos: " + acertos;
                 respondeu = false;
             }
         }

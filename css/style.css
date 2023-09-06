@@ -12,6 +12,12 @@ body{
     background-color: #323232;
 }
 
+.game h1{
+    text-align: center;
+    margin: -10px;
+    cursor: pointer;
+}
+
 .questao{
     width: 100%;
     margin: auto;
